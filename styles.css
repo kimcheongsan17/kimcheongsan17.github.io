@@ -274,6 +274,43 @@ h3 {
   margin-top: 12px;
 }
 
+.publication-list {
+  display: grid;
+  gap: 26px;
+}
+
+.publication-item {
+  display: block;
+}
+
+.publication-item h3 {
+  margin-bottom: 5px;
+  color: var(--ink);
+  font-size: 1.32rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.publication-item p {
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.publication-item strong {
+  color: var(--ink);
+}
+
+.publication-meta {
+  color: var(--accent) !important;
+}
+
+.publication-item:hover h3,
+.publication-item:hover .publication-meta {
+  color: var(--accent);
+}
+
 .timeline {
   display: grid;
   gap: 12px;
