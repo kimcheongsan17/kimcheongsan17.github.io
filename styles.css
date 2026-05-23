@@ -311,6 +311,33 @@ h3 {
   color: var(--accent);
 }
 
+.conference-list {
+  display: grid;
+  gap: 18px;
+}
+
+.conference-item h3 {
+  margin-bottom: 3px;
+  color: var(--ink);
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.conference-item p {
+  margin-bottom: 1px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.conference-item strong {
+  color: var(--ink);
+}
+
+.conference-meta {
+  color: var(--accent) !important;
+}
+
 .timeline {
   display: grid;
   gap: 12px;
