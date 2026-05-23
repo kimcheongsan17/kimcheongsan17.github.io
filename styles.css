@@ -192,14 +192,12 @@ h3 {
   font-size: 1rem;
 }
 
-.quick-facts,
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.quick-facts span,
 .skills span,
 .tag {
   display: inline-flex;
@@ -212,6 +210,14 @@ h3 {
   color: var(--accent-strong);
   font-size: 0.86rem;
   font-weight: 700;
+}
+
+.skills-block {
+  padding-top: 4px;
+}
+
+.skills-block h3 {
+  margin-bottom: 12px;
 }
 
 .panel {
