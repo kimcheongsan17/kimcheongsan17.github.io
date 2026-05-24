@@ -267,9 +267,24 @@ h3 {
   margin-bottom: 16px;
 }
 
-.experience-section {
+.cv-section {
   display: grid;
-  gap: 18px;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.cv-section h2 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cv-stack {
+  display: grid;
+  gap: 28px;
 }
 
 .cv-entry {
@@ -508,6 +523,11 @@ h3 {
 
   .sidebar-photo {
     width: min(260px, 100%);
+  }
+
+  .cv-section {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .cv-entry-body {
