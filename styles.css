@@ -81,6 +81,12 @@ a {
   font-size: 0.82rem;
 }
 
+.brand-email {
+  margin-top: 3px;
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+
 .nav-list {
   display: grid;
   gap: 6px;
