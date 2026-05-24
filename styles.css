@@ -336,7 +336,7 @@ h3 {
 }
 
 .overview-list li,
-.skills-list li {
+skills-list li {
   padding-left: 4px;
 }
 
@@ -344,6 +344,12 @@ h3 {
 .item-card p,
 .detail-summary p {
   color: var(--muted);
+}
+
+.item-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .card-grid {
@@ -366,12 +372,16 @@ h3 {
 }
 
 .item-card h3 {
-  margin-top: 12px;
+  margin: 10px 0 6px;
+  color: var(--ink);
+  font-size: 1.03rem;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .publication-list {
   display: grid;
-  gap: 26px;
+  gap: 18px;
 }
 
 .publication-item {
@@ -379,9 +389,9 @@ h3 {
 }
 
 .publication-item h3 {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: var(--ink);
-  font-size: 1.32rem;
+  font-size: 1.03rem;
   font-weight: 800;
   line-height: 1.35;
 }
@@ -389,7 +399,7 @@ h3 {
 .publication-item p {
   margin-bottom: 2px;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 0.95rem;
   line-height: 1.45;
 }
 
@@ -412,16 +422,17 @@ h3 {
 }
 
 .conference-item h3 {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   color: var(--ink);
-  font-size: 1.02rem;
+  font-size: 1.03rem;
   font-weight: 800;
   line-height: 1.35;
 }
 
 .conference-item p {
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   color: var(--muted);
+  font-size: 0.95rem;
   line-height: 1.45;
 }
 
@@ -442,6 +453,8 @@ h3 {
 .timeline li {
   padding-left: 6px;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .detail-body {
