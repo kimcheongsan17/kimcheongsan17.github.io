@@ -233,6 +233,52 @@ h3 {
   padding-top: 34px;
 }
 
+.research-visuals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.research-visual {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 156px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.research-visual video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 156px;
+  object-fit: cover;
+}
+
+.research-visual figcaption {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  max-width: calc(100% - 24px);
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.research-visual-empty {
+  background:
+    linear-gradient(135deg, rgba(37, 99, 168, 0.06), rgba(138, 90, 18, 0.04)),
+    #fafafa;
+}
+
 .profile-section {
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -342,7 +388,7 @@ h3 {
 }
 
 .overview-list li,
-.skills-list li {
+skills-list li {
   padding-left: 4px;
 }
 
@@ -552,7 +598,8 @@ h3 {
 
   .hero,
   .two-column,
-  .card-grid {
+  .card-grid,
+  .research-visuals {
     grid-template-columns: 1fr;
   }
 
