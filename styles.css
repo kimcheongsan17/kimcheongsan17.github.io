@@ -235,7 +235,7 @@ h3 {
 
 .research-visuals {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   gap: 12px;
   width: 100%;
   max-width: 100%;
@@ -257,10 +257,6 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #f4f4f3;
-}
-
-.research-visual-feature {
-  grid-column: span 2;
 }
 
 .research-visual-empty {
@@ -611,10 +607,6 @@ h3 {
   .card-grid,
   .research-visuals {
     grid-template-columns: 1fr;
-  }
-
-  .research-visual-feature {
-    grid-column: auto;
   }
 
   .sidebar-photo {
