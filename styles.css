@@ -255,6 +255,10 @@ h3 {
   background: #f4f4f3;
 }
 
+.research-visual-feature {
+  grid-column: span 2;
+}
+
 .research-visual video {
   display: block;
   width: 100%;
@@ -605,6 +609,10 @@ h3 {
   .card-grid,
   .research-visuals {
     grid-template-columns: 1fr;
+  }
+
+  .research-visual-feature {
+    grid-column: auto;
   }
 
   .sidebar-photo {
