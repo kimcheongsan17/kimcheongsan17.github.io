@@ -442,7 +442,7 @@ h3 {
   display: grid;
   align-content: start;
   min-height: 0;
-  padding: 18px 20ppx;
+  padding: 18px 20px;
   transition: border-color 160ms ease, background 160ms ease;
 }
 
