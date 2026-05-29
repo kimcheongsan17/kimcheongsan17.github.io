@@ -92,6 +92,21 @@ a {
   gap: 6px;
 }
 
+.cv-link {
+  display: inline-flex;
+  width: fit-content;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.cv-link:hover {
+  color: var(--accent-strong);
+}
+
 .nav-button {
   width: 100%;
   min-height: 34px;

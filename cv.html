@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheongsan Kim - CV</title>
+    <style>
+      :root {
+        --ink: #242424;
+        --muted: #636363;
+        --rule: #d8d5cf;
+        --accent: #8a5d12;
+        --paper: #f7f4ee;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.42;
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 32px auto;
+        padding: clamp(28px, 5vw, 56px);
+        background: #fff;
+        border: 1px solid var(--rule);
+      }
+
+      header {
+        display: grid;
+        gap: 8px;
+        padding-bottom: 22px;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 6vw, 4.4rem);
+        letter-spacing: 0;
+        line-height: 0.95;
+      }
+
+      .subtitle {
+        color: var(--accent);
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .contact {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 28px;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      section:last-child {
+        border-bottom: 0;
+      }
+
+      h2 {
+        font-size: 0.95rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 1.08rem;
+        margin-bottom: 4px;
+      }
+
+      .entry {
+        margin-bottom: 18px;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .meta,
+      .note {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      ul,
+      ol {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          margin: 0;
+          width: 100%;
+          padding: 24px;
+          border-width: 0;
+        }
+
+        section {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .line {
+          display: grid;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="subtitle">Curriculum Vitae</p>
+        <h1>Cheongsan Kim</h1>
+        <p>Ph.D. in Mechanical Engineering, Seoul National University</p>
+        <p class="contact">Mobile: +82-10-9973-5209 | E-mail: kimcs0717@snu.ac.kr</p>
+      </header>
+
+      <section>
+        <h2>Research Interests</h2>
+        <div>
+          <ul>
+            <li>CAE automation and AI-assisted simulation</li>
+            <li>Multiphysics modeling of heat- and moisture-transport-induced deformation</li>
+            <li>Low-Reynolds-number fluid dynamics</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="entry">
+          <div class="line">
+            <h3>Samsung Mobile, Suwon, Korea</h3>
+            <strong>03/2026 to present</strong>
+          </div>
+          <p>Advanced CAE Simulation</p>
+          <ul>
+            <li>Area of study: CAE automation and AI-assisted simulation, development of analysis methods for foldable smartphone hinges and new form factors.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div>
+          <div class="entry">
+            <div class="line">
+              <h3>Seoul National University, Seoul, Korea</h3>
+              <strong>03/2020 to 02/2026</strong>
+            </div>
+            <p>Integrated M.S. and Ph.D., Mechanical Engineering</p>
+            <ul>
+              <li>Advisor: Professor Ho-Young Kim</li>
+              <li>Area of study: heat- and moisture-transport-driven material deformation, fluid transport in HAR nanopatterns and porous media, hydrogel synthesis and adhesion.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="line">
+              <h3>Seoul National University, Seoul, Korea</h3>
+              <strong>03/2014 to 02/2020</strong>
+            </div>
+            <p>B.S., Mechanical Engineering, including military service</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div>
+          <ul>
+            <li>CAE: ABAQUS, COMSOL, Altair HyperMesh, MotionView, PhysicsAI</li>
+            <li>Characterization: AFM, SAXS, E-SEM, E-TEM</li>
+            <li>Fabrication: electrospinning, hydrogel synthesis, and adhesion</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Papers</h2>
+        <div>
+          <ol>
+            <li>C. Kim*, J. Won*, D. Kim*, S. Jung†, H.-Y. Kim†, and Y. Hyun†. Viola seed pod architecture shapes sequential, force-augmented pinching. <em>Science</em> (2026), IF: 45.8.</li>
+            <li>H. Jeong*, C. Kim*, A. Lee†, and H.-Y. Kim†. Sequential multi-modal morphing of single-input pneu-nets. <em>Soft Robotics</em> (2023), IF: 6.1.</li>
+            <li>S. Jung*, C. Kim*, T. Kim, S. Park, and H.-Y. Kim†. Mechanics of water-powered soft actuation. <em>Chemical Reviews</em> (2025), IF: 51.4, invited, 2nd revision.</li>
+            <li>M. Han*, C. Kim*, J. Lee, J.-M. Lee, H. Jung, S. Je, Y. Yamaoka, H.-Y. Kim†, and Y. Lee†. De novo cuticle formation acts as a multiscale mechanical system controlling growth and robustness after floral organ abscission. In preparation.</li>
+            <li>H. Kim, C. Kim, H. Jeon, C. Park, S. Jung†, and H.-Y. Kim†. Mechano-osmosis-induced turgor in hydrogel-encapsulated liquid pouch. In preparation.</li>
+          </ol>
+          <p class="note">* Equal contribution, † Corresponding author</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Conference Presentations</h2>
+        <div>
+          <ol>
+            <li>H. Jeong, C. Kim, J. Ha, S. Lee, A. Lee, and H.-Y. Kim. Dual curvature control using pneumatic actuators. American Physical Society March Meeting, 2021.</li>
+            <li>C. Kim, H. Jeong, J. Ha, S. Lee, A. Lee, and H.-Y. Kim. Dual morphing pneu-net by stiffness control. Korean Society of Mechanical Engineers Autumn Conference, 2021.</li>
+            <li>C. Kim, H. Jeong, J. Ha, A. Lee, and H.-Y. Kim. Multi-morph pneu-net systems with a single input. American Physical Society March Meeting, 2022.</li>
+            <li>H. Jeong, C. Kim, J. Ha, P. Woo, A. Lee, and H.-Y. Kim. Dual curvature control using pneumatic actuators. The 2nd International Conference on Nature-Inspired Surface Engineering, 2022. Best presentation prize.</li>
+            <li>C. Kim, S. Jung, and H.-Y. Kim. Dual morphing hydrogel with a fibrous membrane. Korean Society of Mechanical Engineers Autumn Conference, 2023.</li>
+            <li>C. Kim and H.-Y. Kim. Sequential multimodal morphing of single-input pneu-nets. Soft Robotics invited talk, 2024.</li>
+            <li>C. Kim, J. Won, S. Jung, Y. Hyun, and H.-Y. Kim. Humidity-responsive poroelastic zippering of Viola seed pods. IUTAM Symposium on Capillarity and Elastocapillarity in Biology, 2024.</li>
+            <li>C. Kim, J. Won, S. Jung, Y. Hyun, and H.-Y. Kim. Poroelastic zippering actuation of hygroresponsive Viola seed pods. American Physical Society Division of Fluid Dynamics, 2024.</li>
+            <li>H. Kim, C. Kim, H. Jeon, C. Park, S. Jung, and H.-Y. Kim. Mechano-osmosis-induced turgor in hydrogel-encapsulated liquid pouch. NCFE 14, 2026.</li>
+            <li>M. Han, C. Kim, J. Lee, J.-M. Lee, H. Jung, S. Je, Y. Yamaoka, H.-Y. Kim, and Y. Lee. De novo cuticle formation acts as a multiscale mechanical system controlling growth and robustness after floral organ abscission. American Society of Plant Biologists, 2026.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <h2>Patents</h2>
+        <div>
+          <ol>
+            <li>C. Kim, H. Jeong, J. Lee, and H.-Y. Kim. Pneumatic valve device using expansion of elastic material protruding parts. 10-2397568 KOREA, 2022.</li>
+            <li>C. Kim, H. Jeong, and H.-Y. Kim. Pneu-net device capable of sequential dual deformation. 10-2478112 KOREA, 2022.</li>
+            <li>C. Kim, H. Jeong, and H.-Y. Kim. Pneu-net device capable of sequential torsional and bending deformation. 10-2478131 KOREA, 2022.</li>
+            <li>C. Kim, H. Jeong, S. O, J. Nam, and H.-Y. Kim. Massage device and controlling method thereof. 1020200154180 KOREA, 2020.</li>
+            <li>C. Kim, H. Jeong, S. O, J. Nam, J. In, and H.-Y. Kim. Massage device having twist function and control method thereof. 1020210149522 KOREA, 2021.</li>
+            <li>C. Kim, H. Jeong, G. Lee, H. Jeong, W. Park, and H.-Y. Kim. Tube container. 1020220039765 KOREA, 2022.</li>
+            <li>C. Kim, H. Jeon, J. Kim, and H.-Y. Kim. Plumbing apparatus containing hydrogel part. 1020230186336 KOREA, 2023.</li>
+            <li>C. Kim, H. Jeon, and H.-Y. Kim. Method for manufacturing grooved surface using mesh structure. 1020230186335 KOREA, 2023.</li>
+            <li>C. Kim, J. Won, D. Kim, S. Jung, H.-Y. Kim, and Y. Hyun. Biomedical devices inspired by plant morphing mechanisms. 1020260015498 KOREA, 2026.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <h2>Honors and Awards</h2>
+        <div>
+          <ul>
+            <li>Open Innovation Challenge Encouragement Prize, KSME-SEMES, 12/2020</li>
+            <li>Future Home Tech Challenge Encouragement Prize, KSME-LG, 10/2023</li>
+            <li>Future Home Tech Challenge Silver Award, KSME-LG, 11/2024</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Research Projects</h2>
+        <div>
+          <ul>
+            <li>Research Center for Metamorphing Mechanical Systems, National Research Foundation of Korea, 03/2020 to 02/2026</li>
+            <li>Pneu-net system for personalized massager, Amore Pacific, 06/2021 to 09/2021</li>
+            <li>Novel origami structure for packaging, Amore Pacific, 06/2022 to 10/2022</li>
+            <li>Automatic humidity control system using hygroscopic materials, LG Electronics, 07/2023 to 02/2026</li>
+            <li>Leaning and bending models in composite nanostructures, Samsung Electronics, 10/2023 to 09/2025</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Academic Memberships</h2>
+        <div>
+          <ul>
+            <li>American Physical Society (APS), Member, 2021-2025</li>
+            <li>Korean Society of Mechanical Engineers (KSME), Member, 2021-2025</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <div>
+          <h3>Ho-Young Kim, Ph.D.</h3>
+          <p>Professor, Department of Mechanical Engineering, Seoul National University, Seoul, Korea</p>
+          <p class="meta">Relationship: Ph.D. advisor | E-mail: hyk@snu.ac.kr</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
