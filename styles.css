@@ -502,6 +502,20 @@ h3 {
   color: var(--ink);
 }
 
+.own-name {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.author-note {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
 .publication-meta {
   color: var(--accent) !important;
 }
