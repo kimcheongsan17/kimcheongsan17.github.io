@@ -250,7 +250,7 @@ h3 {
 
 .research-visuals {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.417fr) minmax(0, 1fr);
   gap: 12px;
   width: 100%;
   max-width: 100%;
@@ -264,7 +264,13 @@ h3 {
   margin: 0;
 }
 
-.research-visual-media,
+.research-visual-media {
+  position: relative;
+  aspect-ratio: 683 / 241;
+  overflow: hidden;
+  background: transparent;
+}
+
 .research-visual-empty {
   position: relative;
   aspect-ratio: 683 / 241;
@@ -291,6 +297,10 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.research-visual-secondary .research-visual-media img {
+  object-fit: fill;
 }
 
 .research-visual figcaption {
@@ -647,6 +657,10 @@ h3 {
   .card-grid,
   .research-visuals {
     grid-template-columns: 1fr;
+  }
+
+  .research-visual-feature .research-visual-media {
+    aspect-ratio: 2 / 1;
   }
 
   .sidebar-photo {
