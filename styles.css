@@ -286,6 +286,13 @@ h3 {
   object-fit: contain;
 }
 
+.research-visual-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .research-visual figcaption {
   margin: 0 0 8px;
   color: var(--ink);
@@ -298,6 +305,10 @@ h3 {
   background:
     linear-gradient(135deg, rgba(37, 99, 168, 0.06), rgba(138, 90, 18, 0.04)),
     #fafafa;
+}
+
+.research-visual-secondary .research-visual-media {
+  aspect-ratio: 2 / 1;
 }
 
 .profile-section {
