@@ -250,7 +250,7 @@ h3 {
 
 .research-visuals {
   display: grid;
-  grid-template-columns: minmax(0, 1.417fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.436fr) minmax(0, 1fr);
   gap: 12px;
   width: 100%;
   max-width: 100%;
@@ -266,7 +266,7 @@ h3 {
 
 .research-visual-media {
   position: relative;
-  aspect-ratio: 683 / 241;
+  aspect-ratio: 1792 / 624;
   overflow: hidden;
   background: transparent;
 }
@@ -660,7 +660,11 @@ h3 {
   }
 
   .research-visual-feature .research-visual-media {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1792 / 624;
+  }
+
+  .research-visual-secondary .research-visual-media {
+    aspect-ratio: 1792 / 624;
   }
 
   .sidebar-photo {
