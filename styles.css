@@ -159,7 +159,7 @@ a {
 }
 
 .sidebar-photo {
-  width: 118px;
+  width: min(190px, 100%);
   max-width: 100%;
 }
 
