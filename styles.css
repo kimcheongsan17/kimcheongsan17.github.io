@@ -92,6 +92,12 @@ a {
   gap: 6px;
 }
 
+.profile-links {
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+
 .cv-link {
   display: inline-flex;
   width: fit-content;
